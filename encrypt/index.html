@@ -5,7 +5,7 @@
 function myAjax () {
 $.ajax( { type : 'POST',
           data : { },
-          url  : 'gong.php',              // <=== CALL THE PHP FUNCTION HERE.
+          url  : '/php/gong.php',              // <=== CALL THE PHP FUNCTION HERE.
           success: function ( data ) {
             alert( data );               // <=== VALUE RETURNED FROM FUNCTION.
           },
@@ -17,6 +17,7 @@ $.ajax( { type : 'POST',
     </script>
   </head>
   <body>
-    <button onclick="myAjax()">Click here</button> <!-- BUTTON CALL PHP FUNCTION -->
+ <h1>Congrats, you made it past the password, feel free to hit the gong in my room</h1> 
+  <button onclick="myAjax()">Clang the gong</button> <!-- BUTTON CALL PHP FUNCTION -->
   </body>
 </html>
